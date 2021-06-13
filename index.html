@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DZ_23</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <h1>Домашняя работа №23</h1>
+</header>
+
+<div class="content">
+    <script src="JS/DZ23.js"></script>
+    <script src="JS/DZ23_1.js"></script>
+    <script src="JS/DZ23_2.js"></script>
+    <script src="JS/DZ23_4.js"></script>
+
+    <div id="taskList">
+        <input type="button" value="1. Список покупок" onclick="chooseTask(1,value.slice(2))" name="btn1">
+        <input type="button" value="2. Чек" onclick=chooseTask(2,value.slice(2)) name="btn2">
+        <input type="button" value="3. Css-стили" onclick="chooseTask(3,value.slice(2))" name="btn3">
+        <input type="button" value="4. Аудитории академии" onclick="chooseTask(4,value.slice(2))" name="btn4">
+    </div>
+
+    <div id="task">
+        <h2 id="condition">Задача</h2>
+
+        <div class="result">
+            <h2 id="result"></h2>
+        </div>
+
+        <div id="subJob1">
+            <input type="button" value="Сортировка некупленные/купленные" onclick=sortFoodShopList() name="btn5">
+            <input type="button" value="Добавление покупки" onclick=setParameters(1) name="btn6">
+            <input type="button" value="Покупка продукта" onclick=setParameters(2) name="btn7">
+            <input type="button" value="Удаление из списка" onclick=setParameters(3) name="btn8">
+        </div>
+
+        <div id="cheque">
+            <p class="cheque__top">ООО "МАГАЗИН"</p>
+            <p class="cheque__top">ДОБРО ПОЖАЛОВАТЬ !</p>
+            <hr>
+            <p>КАССОВЫЙ ЧЕК</p>
+            <hr class="dashed">
+            <ol class="cheque__list">
+            </ol>
+            <hr class="dashed">
+            <p class="cheque__sum"><span>ИТОГ</span> <span id="sum">=3316.00</span></p>
+            <p class="cheque__aver"><span>Средняя стоимость</span> <span id="aver">=3316.00</span></p>
+        </div>
+
+        <div id="subJob4">
+            <input type="button" value="Аудитории указанного факультета" onclick=setParameters(5) name="btn13">
+            <input type="button" value="Аудитории, подходящие выбранной группе" onclick=setParameters(6) name="btn14">
+            <input type="button" value="Сортировка по количеству мест" onclick=sortBySeatsNumber(auditoriumList) name="btn15">
+            <input type="button" value="Сортировка по названию" onclick=sortByName(auditoriumList) name="btn16">
+            <input type="button" value="Добавить аудиторию" onclick=setParameters(7) name="btn17">
+            <input type="button" value="Удалить аудиторию" onclick=setParameters(8) name="btn18">
+        </div>
+
+        <div id="inputs">
+            <h3>Запрос 1</h3>
+            <input type="text">
+            <h3>Запрос 2</h3>
+            <input type="text">
+            <h3>Запрос 3</h3>
+            <input type="text">
+            <h3>Запрос 4</h3>
+            <input type="text">
+            <h3>Запрос 5</h3>
+            <input type="text">
+            <h3>Запрос 6</h3>
+            <input type="text">
+
+            <p class="cb"><input type="checkbox" name="f2" id="cb1">
+                <label for="cb1">Куплен</label></p>
+
+            <input type="button" value="Выполнить" onclick=doChosen() name="btn11">
+
+        </div>
+        <input type="button" value="На главную" onclick=showTaskList() name="btn12">
+    </div>
+
+</div>
+
+</body>
+</html>

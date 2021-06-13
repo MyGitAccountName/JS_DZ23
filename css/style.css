@@ -1,0 +1,170 @@
+html {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    font-size: 24px;
+    color: ghostwhite;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'GOST type B';
+    src: url('/fonts/GOST_B.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(0, #474eab, #a064b8, #a244bc);
+    min-width: 570px;
+    min-height: 100vh;
+}
+
+header {
+    text-shadow: 0 2px 2px #212872;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#taskList {
+    display: block;
+    width: 50%;
+}
+
+#taskList input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    font-size: 24px;
+    color: #1f1f29;
+}
+
+#subJob1 input,
+#subJob4 input {
+    display: block;
+    width: 380px;
+    margin: 10px auto;
+    height: 50px;
+    font-size: 18px;
+    color: #1f1f29;
+}
+
+#cheque {
+    font-family: "GOST type B", sans-serif;
+    color: black;
+    text-shadow: none;
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+/*    letter-spacing: -1.5px;*/
+    font-stretch: condensed;
+}
+
+#cheque p {
+    margin: 5px 0;
+}
+
+.cheque__top {
+    font-weight: bold;
+}
+
+.dashed {
+    height: 3px;
+    border: 0;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+.cheque__list {
+    padding: 0 0 0 20px;
+}
+
+.cheque__list-name,
+.cheque__list-code {
+    text-align: left;
+}
+.cheque__list-price {
+    text-align: right;
+}
+
+.red .cheque__list-price {
+    color: red;
+}
+
+
+.cheque__sum {
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cheque__aver {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+#task {
+    display: none;
+    text-shadow: 0 2px 2px #212872;
+}
+
+#task h3 {
+    margin: 20px 0 10px;
+}
+
+#inputs {
+    display: none;
+}
+
+#inputs > input {
+    width: 160px;
+    margin: 0 auto;
+    font-size: 27px;
+    text-align: center;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+#inputs input[name="btn11"] {
+    width: 170px;
+    margin: 50px auto 0;
+    display: block;
+}
+
+input[name="btn12"] {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    display: block;
+    font-size: 27px;
+    width: 170px;
+    margin: 30px auto 0;
+}
+
+#task > p {
+    display: none;
+    width: 100%;
+}
+
+.result table{
+    margin: 0 auto 30px;
+}
+
+.result h2 {
+    width: 90vw;
+    display: block;
+    text-wrap: inherit;
+    word-wrap: break-word;
+    text-shadow: 0 4px 4px #212872;
+    font-size: 64px;
+}
